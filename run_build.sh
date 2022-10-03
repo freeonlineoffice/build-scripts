@@ -25,8 +25,7 @@ EXTERNAL_CACHES="$(realpath caches/external)"
 )
 
 # Clone from master so that build script is always up-to-date
-# FIXME: restore to master once merged
-[ ! -d online ] && git clone $GIT_MITIGATIONS --branch=$FREEONLINEOFFICE_BRANCH $ONLINE_SOURCE
+[ ! -d online ] && git clone $GIT_MITIGATIONS --branch=master $ONLINE_SOURCE
 cd online || exit 1
 git config pull.ff only
 git fetch origin
