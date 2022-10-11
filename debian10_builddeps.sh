@@ -2,7 +2,7 @@
 
 # Install node from nodesource since newer versions give error
 [ ! -f /etc/apt/sources.list.d/nodesource.list ] && (
-  curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+  curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
   apt-get install -y nodejs
 )
 
